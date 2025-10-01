@@ -18,10 +18,17 @@ def sqrt(x):
     """ Return Square root of x to 3 decimal places """
     return round(x**0.5, 3)
 
-print("########### Adv Calc Examples ############")
-print(f"4 % 3 = {mod(4, 3)}")
-print(f"4 ** 3 = {power(4, 3)}")
-print(f"\N{square root}99 = {sqrt(99)}")
-print("###########################################")
+def main():
+    print("########### Adv Calc Examples ############")
+    print(f"4 % 3 = {mod(4, 3)}")
+    print(f"4 ** 3 = {power(4, 3)}")
+    print(f"\N{square root}99 = {sqrt(99)}")
+    print("###########################################")
+    return None
 
-sys.exit(0)
+# Namespace Trick
+if __name__ == "__main__":
+    # EXECUTE ONLY if ran directly as a program
+    # Ignored if imported as a module
+    main()
+    sys.exit(0)

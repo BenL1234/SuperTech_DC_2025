@@ -41,13 +41,11 @@ class Tank:
         self._health -= damage
         return None
 
+    # Some SPECIAL methods..
+    # Example of OPERATOR OVERLOADING
+    def __add__(self, other):
+        return self._health + other._health
 
-
-
-
-
-
-
-
-
-
+    # Example of DUCK TYPING - my Tank can now QUACK like a str!
+    def __str__(self):
+        return f"Model={self.model}, health={self._health}, speed={self._speed}"

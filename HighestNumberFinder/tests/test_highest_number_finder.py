@@ -34,5 +34,18 @@ class TestHighestNumberFinder(unittest.TestCase):
         # Assert
         self.assertEqual(actual_result, expected_result)
 
+    def test_find_highest_in_list_two_ascending_result_second_item(self):
+        # Structure TestCases TDD - AAAs
+        # Arrange
+        input_value = [4, 13]
+        expected_result = 13
+        cut = HighestNumberFinder() # Class Under Test
+
+        # Act
+        actual_result = cut.find_highest_number(input_value)
+
+        # Assert
+        self.assertEqual(actual_result, expected_result)
+
 if __name__ == "__main__":
     unittest.main()

@@ -7,4 +7,8 @@
 
 class HighestNumberFinder:
     def find_highest_number(self, numbers):
-        return numbers[0]
+        highest_number = numbers[0]
+        if len(numbers) > 1:
+            if numbers[1] > highest_number:
+                highest_number = numbers[1]
+        return highest_number

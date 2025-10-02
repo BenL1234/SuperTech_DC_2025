@@ -60,4 +60,15 @@ class Tank:
 
     # Wrap the getter and setter methods with ONE VARIABLE name
     # interface
-    tank_health = property(get_health, set_health)
+    # tank_health = property(get_health, set_health)
+
+    # Alternatively, we could DECORATE methods with a PROPERTY FUNCTION
+    # INTO a Property Object that has a getter and setter
+    @property
+    def tank_health(self):
+        return self._health
+
+    @tank_health.setter
+    def tank_health(self, new_health):
+        self._health = new_health
+        return None

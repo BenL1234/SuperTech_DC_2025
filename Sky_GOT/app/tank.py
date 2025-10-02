@@ -4,11 +4,13 @@
 """
     Tank Class for a Game of Tanks
 """
+# import vehicle
+from Sky_GOT.app.vehicle import Vehicle
 
-class Tank:
+class Tank(Vehicle):
     # Class has 2 components = Attributes/Data + Behaviour/Methods
     def __init__(self, country, model):
-
+        Vehicle.__init__(self, country, model)
         self._speed = 0
         self._health = 100
         self._location = {'x':0, 'y':0, 'z': 0}

@@ -1,8 +1,8 @@
 #! /usr/bin/env python3
 # Author: DCameron
-# Description: This script will demo
+# Description: This is a BASE class of Vehicle
 """
-    Docstring:
+    Vehicle Base Class for Tanks, Jeeps and Trucks
 """
 
 class Vehicle:

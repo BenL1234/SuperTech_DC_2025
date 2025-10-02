@@ -10,7 +10,7 @@ import sys
 def add(*args):
     """ Return SUM of all arguments as a float
     >>> add(4, 3, 2, 1)
-    10.1
+    10.0
     >>> add(10, 20)
     30.0
     """
@@ -22,7 +22,7 @@ def add(*args):
 def mul(*args):
     """ Return PRODUCT of all arguments as a float
     >>> mul(4, 3)
-    13.0
+    12.0
     """
     total = 1
     for num in args:
@@ -32,7 +32,7 @@ def mul(*args):
 def div(x, z):
     """ Return QUOTIENT of x divided by z to 3 decimal places
     >>> div(4, 3)
-    1.334
+    1.333
     """
     return round(x/z, 3)
 

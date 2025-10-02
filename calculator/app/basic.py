@@ -10,7 +10,7 @@ import sys
 def add(*args):
     """ Return SUM of all arguments as a float
     >>> add(4, 3, 2, 1)
-    10.0
+    10.1
     >>> add(10, 20)
     30.0
     """
@@ -22,7 +22,7 @@ def add(*args):
 def mul(*args):
     """ Return PRODUCT of all arguments as a float
     >>> mul(4, 3)
-    12.0
+    13.0
     """
     total = 1
     for num in args:
@@ -32,7 +32,7 @@ def mul(*args):
 def div(x, z):
     """ Return QUOTIENT of x divided by z to 3 decimal places
     >>> div(4, 3)
-    1.333
+    1.334
     """
     return round(x/z, 3)
 
@@ -48,5 +48,7 @@ def main():
 if __name__ == "__main__":
     # EXECUTE ONLY if ran directly as a program
     # Ignored if imported as a module
+    import doctest
+    doctest.testmod()
     main()
     sys.exit(0)

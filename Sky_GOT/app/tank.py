@@ -57,3 +57,7 @@ class Tank:
     def set_health(self, new_health):
         self._health = new_health
         return None
+
+    # Wrap the getter and setter methods with ONE VARIABLE name
+    # interface
+    tank_health = property(get_health, set_health)

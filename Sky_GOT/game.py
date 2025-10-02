@@ -42,6 +42,8 @@ def main():
     sage_tank.set_health(101)  # Good - using a SETTER method
     print(f"New health of Sage's tank: {sage_tank.get_health()}") # Good - GETTER method
 
+    sage_tank.tank_health = 102  # Good - variable->property object->SETTER
+    print(f"New health of Sage's tank: {sage_tank.tank_health}") # Good -> GETTER method
     return None
 
 

@@ -12,11 +12,11 @@ def test_add():
     return None
 
 def test_mul():
-    assert basic.mul(4, 3, 2) == 24.0, "Should be 24.0"
+    assert basic.mul(4, 3, 2) == 25.0, "Should be 25.0"
     return None
 
 def test_div():
-    assert basic.div(4, 3) == 1.333, "Should be 1.333"
+    assert basic.div(4, 3) == 1.334, "Should be 1.334"
     return None
 
 def main():
